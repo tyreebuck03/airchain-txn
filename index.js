@@ -98,7 +98,7 @@ const main = async () => {
       console.log(colors.white(`\nGenerated address ${i}: ${receiverAddress}`));
 
       const amountToSend = ethers.parseUnits(
-        (Math.random() * (0.0000001 - 0.00000001) + 0.00000001)
+        (Math.random() * (0.1 - 0.01) + 0.01)
           .toFixed(10)
           .toString(),
         'ether'
@@ -114,7 +114,7 @@ const main = async () => {
         value: amountToSend,
         gasLimit: 21000,
         gasPrice: gasPrice,
-        chainId: 88817,
+        chainId: 1234,
       };
 
       let tx;
