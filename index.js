@@ -7,7 +7,7 @@ const checkBalance = require('./src/checkBalance');
 const displayHeader = require('./src/displayHeader');
 const sleep = require('./src/sleep');
 
-const rpcUrl = 'https://rpc-testnet.unit0.dev';
+const rpcUrl = 'http://31.220.92.86:8545';
 
 const MAX_RETRIES = 5;
 const RETRY_DELAY = 5000;
